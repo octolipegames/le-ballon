@@ -14,8 +14,8 @@ const plugins = [{
 // Game Config reference: https://photonstorm.github.io/phaser3-docs/Phaser.Types.Core.html#.GameConfig
 const config = {
   type: Phaser.WEBGL,
-  width: 800,
-  height: 600,
+  width: 1200,
+  height: 1800,
   resolution: 1, // we could use 2 for Retina
   scale: {
     mode: Phaser.Scale.FIT,
@@ -32,9 +32,10 @@ const config = {
     Scene,
   ],
   physics: {
-    default: 'arcade',
-    arcade: {
+    default: 'matter',
+    matter: {
       debug: true,
+      fps: 30,
       gravity: { y: 150 }
     }
   }
