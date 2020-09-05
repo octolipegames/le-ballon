@@ -36,7 +36,7 @@ const config = {
     matter: {
       debug: true,
       fps: 30,
-      gravity: { y: 150 }
+      gravity: { y: 0.3 }
     }
   }
 }

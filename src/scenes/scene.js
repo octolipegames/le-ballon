@@ -28,7 +28,9 @@ export class Scene extends Phaser.Scene {
   burnFuel() {
     // this.balloon.body.setAccelerationY(-100)
     
-    this.balloon.thrust(10)
+    this.balloon.setVelocityY(-5)
+    this.balloon.setVelocityX(10)
+    // this.balloon.thrust(10)
     
     clearTimeout(this.endBurnTimeout)
     
@@ -63,7 +65,7 @@ export class Scene extends Phaser.Scene {
     this.balloon = this.matter.add.image(0, 0, 'balloon')
     // this.balloon.body.setDragY(20)
     // this.balloon.body.setAccelerationX(50)
-    this.balloon.setVelocityX(50)
+    this.balloon.setVelocityX(10)
     
     // this.physics.add.collider(this.balloon.body, this.tileBodies, () => console.log('collider'));
     
