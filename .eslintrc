@@ -1,0 +1,14 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "semi": 1,
+        "indent": ["warn", 2],
+        "space-before-blocks": ["warn", "always"]
+    }
+}

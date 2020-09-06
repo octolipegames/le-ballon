@@ -1,0 +1,12 @@
+
+Polygones
+https://www.codeandweb.com/physicseditor
+
+Clone de Flappy bird
+https://github.com/IgorRozani/flappy-bird/blob/master/js/game.js
+
+Fire particles
+https://phaser.io/examples/v3/view/game-objects/particle-emitter/fire-max-10-particles
+
+Infinite Scrolling
+https://gamedevacademy.org/how-to-make-an-infinitely-scrolling-game-with-phaser/

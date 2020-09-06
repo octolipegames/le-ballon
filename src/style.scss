@@ -1,0 +1,117 @@
+@font-face {
+	font-family: "OpenSans";
+	src:
+		url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "OpenSans-Bold";
+	src:
+		url("../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: "OpenSans";
+	background: #000;
+}
+
+.font-preload {
+	font-family: "OpenSans-Bold";
+	opacity: 0;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+canvas {
+	// border: 2px dashed orange;
+}
+div.repo, div.team, div.thanks {
+	width: 800px;
+	max-width: 80%;
+	font-size: 40px;
+
+	p {
+		margin-top: 20px;
+	}
+
+	h4 {
+		margin-top: 40px;
+		font-family: "OpenSans-Bold";
+		font-size: 44px;
+	}
+}
+div.team {
+	height: 600px;
+}
+div.repo {
+	font-size: 44px;
+	// overflow-y: scroll;
+	height: 1000px;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.9;
+	}
+}
+@keyframes fadeOut {
+	0% {
+		opacity: 0.9;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+#sticky-container {
+	position: fixed;
+	width: 100%;
+	animation: fadeIn 1s ease-out forwards;
+	background: #fff;
+	&.closed {
+		display: none;
+		div, button {
+			display: none;
+		}
+	}
+	div {
+		max-width: 60vh;
+		margin: auto;
+		margin-top: 4px;
+		font-size: 16px;
+		padding: 0 12px;
+
+		button {
+			width: 45%;
+			background: #27303a;
+			color: white;
+			border: 0;
+			border-radius: 3px;
+			font-size: 16px;
+			float: right;
+			padding: 4px 0;
+			margin: 10px 0;
+			&.no {
+				float: left;
+				background: #ddd;
+				color: #000;
+			}
+		}
+	}
+	bottom: 0;
+	left: 0;
+}
