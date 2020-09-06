@@ -17,7 +17,7 @@ const plugins = [{
   mapping: "matterCollision"
 }];
 
-const OBJECT_DEBUG = true;
+const OBJECT_DEBUG = false;
 
 if(OBJECT_DEBUG === true) {
   console.log('push…');
